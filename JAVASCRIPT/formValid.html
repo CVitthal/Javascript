@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validate(){
+
+	var name=document.myform.name.value;
+	var pass=document.myform.pass.value;
+	if(name==null||name=="")
+	{
+	alert("Name field can not be null");
+	return false;
+	}
+	else if(pass.length <6){
+	alert("Password must be at least 6 characters long");
+	return false;
+	}
+	
+}
+
+</script>
+<style>
+#name{background-color:red;
+}
+</style>
+</head>
+<body>
+<form name="myform" method="post" onsubmit="return validate()" action="valid.html">
+
+<label>User name</label><input type="text" name="name" id="name"><br/>
+
+Password<input type="text" name="pass" id="pass"><br/>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
