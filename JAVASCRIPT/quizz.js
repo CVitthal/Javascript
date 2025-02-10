@@ -27,6 +27,13 @@ answer:[
 {answer:"first",correct:true},
 {answer:"first",correct:false},
 {answer:"first",correct:false}
+]},
+{question:"this is question5",
+answer:[
+{answer:"first",correct:false},
+{answer:"first",correct:true},
+{answer:"first",correct:false},
+{answer:"first",correct:false}
 ]}
 ];
 function start(currentQ){
